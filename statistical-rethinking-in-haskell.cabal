@@ -1,0 +1,38 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 3c1825e17463b63b545d12cd4bd20c782f02490ef62e4e8072f94d4e5d33fc18
+
+name:           statistical-rethinking-in-haskell
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/zheguang/statistical-rethinking-in-haskell#readme
+author:         Zheguang Zhao
+maintainer:     zheguang.zhao@gmail.com
+copyright:      Copyright (c) 2020 Zheguang Zhao
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable statistical-rethinking-in-haskell
+  main-is: Main.hs
+  other-modules:
+      Sampling
+      SmallWorld
+      Paths_statistical_rethinking_in_haskell
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , ghc-prim >=0.5.3
+    , gnuplot >=0.5.6
+    , ihaskell >=0.10
+    , ihaskell-gnuplot >=0.1.0.1
+    , ihaskell-graphviz >=0.1.0.0
+    , random >=1.1
+  default-language: Haskell2010

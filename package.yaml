@@ -1,0 +1,26 @@
+name:                statistical-rethinking-in-haskell
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/zheguang/statistical-rethinking-in-haskell#readme
+license:             BSD3
+author:              Zheguang Zhao
+maintainer:          zheguang.zhao@gmail.com
+copyright:           Copyright (c) 2020 Zheguang Zhao
+category:            Web
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - random >= 1.1
+  - gnuplot >= 0.5.6
+  - ghc-prim >= 0.5.3
+  - ihaskell >= 0.10
+  - ihaskell-graphviz >= 0.1.0.0
+  - ihaskell-gnuplot >= 0.1.0.1
+
+executables:
+  statistical-rethinking-in-haskell:
+    source-dirs:      src
+    main:             Main.hs
